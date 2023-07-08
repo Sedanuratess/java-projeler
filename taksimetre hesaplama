@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class proje1 {
+
+	public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	double wpkm=2.20;
+	double başlangıcücreti=10;
+	System.out.println("Gidilen mesafeyi giriniz: ");
+	double km=scanner.nextDouble();
+	double wage =başlangıcücreti+ km*wpkm;
+	double  wage1=wage<20?20:wage;
+	System.out.println("Ödemeniz gereken tutar:"+(wage1<=20?"minimum turar 20 tl'dir.":wage1+"TL"));
+	
+	
+	}}
