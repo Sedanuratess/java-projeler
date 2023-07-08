@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class proje1 {
+	public static void main(String[]args) {
+		//pi sayısı 3.14 alındı.
+	double alan;
+	double r;
+	double pi=3.14;
+	Scanner scanner=new Scanner(System.in);
+	System.out.println("yarıçapı giriniz: ");
+	r=scanner.nextDouble();
+	alan=pi*r*r;
+double 	cevre=2*pi*r;
+System.out.println("Alanı: "+alan);
+System.out.println("Çevre: "+cevre);
+	
+	}}
