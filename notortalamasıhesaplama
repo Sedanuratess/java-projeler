@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class proje1 {
+
+	public static void main(String[] args) {
+		int matematik,fizik,kimya,türkçe,tarih,müzik;
+		Scanner klavye=new Scanner(System.in);
+		System.out.println(" Matematik notunu giriniz: ");
+		matematik=klavye.nextInt();
+		System.out.println(" Fizik notunu giriniz: ");
+		fizik=klavye.nextInt();
+		System.out.println(" Kimya notunu giriniz: ");
+		kimya=klavye.nextInt();
+		System.out.println(" Türkçe notunu giriniz: ");
+		türkçe=klavye.nextInt();
+		System.out.println(" Tarih notunu giriniz: ");
+		tarih=klavye.nextInt();
+		System.out.println(" Müzik notunu giriniz: ");
+		müzik=klavye.nextInt();
+	int toplam=(matematik+fizik+kimya+tarih+türkçe+müzik);
+	double ortalama=(double)toplam/6;
+	System.out.println("Ortalamanız:"+ortalama);
+	String genelsonuc = (ortalama >=60) ? "Geçtiniz" : "Kaldınız";
+    System.out.println(genelsonuc);
+	}
+
+}
