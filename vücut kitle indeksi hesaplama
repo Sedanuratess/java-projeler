@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class proje1 {
+	public static void main(String[]args) {
+	double boy;
+	double kilo;
+	double vki;
+	Scanner klavye=new Scanner(System.in);
+	System.out.println("kilo giriniz:");
+	kilo =klavye.nextDouble();
+	System.out.println("boyunuzu metre cinsinden giriniz: ");
+	boy=klavye.nextDouble();
+	vki=kilo/(boy*boy);
+	System.out.println("vücut kitle indeksiniz: "+vki);
+	
+	}}
