@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class proje1 {
+
+	public static void main(String[] args) {
+	double kenar1,kenar2,kenar3;
+	double cevre;
+	double u;
+	double alan;
+	Scanner scanner=new Scanner(System.in);
+	System.out.println("1.kenarı giriniz: ");
+	kenar1=scanner.nextDouble();
+	System.out.println("2.kenarı giriniz: ");
+	kenar2=scanner.nextDouble();
+	System.out.println("3.kenarı giriniz: ");
+	kenar3=scanner.nextDouble();
+	u=(kenar1+kenar2+kenar3)/2;
+	cevre=2*u;
+	alan=u*(u-kenar1)*(u-kenar2)*(u-kenar3);
+	System.out.println("Alanı:"+alan);
+	
+	
+	}}
