@@ -1,0 +1,86 @@
+İlk önce dizinin ilk elemanını kök (root) olarak belirleriz. İlk eleman 7 olduğu için kök 7 olur.
+Ağaç: 7
+
+Kökten sonra gelen elemanları BST ağacına eklerken, her bir elemanı mevcut ağacın uygun konumuna yerleştiririz.
+
+5, kökten daha küçük olduğu için sol tarafa yerleştirilir.
+Ağaç:
+7
+/
+5
+
+1, kökten daha küçük olduğu için sol tarafa yerleştirilir.
+Ağaç:
+7
+/
+5 1
+
+8, kökten daha büyük olduğu için sağ tarafa yerleştirilir.
+Ağaç:
+7
+/
+5 1
+8
+
+3, kökten daha küçük olduğu için sol tarafa yerleştirilir.
+Ağaç:
+7
+/
+5 1
+/
+3 8
+
+6, kökten daha büyük olduğu için sağ tarafa yerleştirilir.
+Ağaç:
+7
+/
+5 1
+/
+3 6
+
+0, kökten daha küçük olduğu için sol tarafa yerleştirilir.
+Ağaç:
+7
+/
+5 1
+/
+3 6
+/
+0
+
+9, kökten daha büyük olduğu için sağ tarafa yerleştirilir.
+Ağaç:
+7
+/
+5 1
+/
+3 6
+\
+0 9
+
+4, kökten daha küçük olduğu için sol tarafa yerleştirilir.
+Ağaç:
+7
+/
+5 1
+/
+3 6
+/ /
+0 4 9
+
+2, kökten daha küçük olduğu için sol tarafa yerleştirilir.
+Ağaç:
+7
+/
+5 1
+/
+3 6
+/ /
+0 4 9
+/
+2
+
+
+
+
+
