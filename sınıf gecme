@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class sınıfgecme {
+//Dersler : Matematik, Fizik, Türkçe, Kimya, Müzik   Geçme Notu : 55  ders notu 0-100 arasında değilse ortalamaya katılmasın 
+	public static void main(String[] args) {
+int matematik,fizik,kimya ,türkce,müzik;
+double nottoplam=0 ,ortalama;
+int sayac=0;
+Scanner scanner=new Scanner(System.in);
+System.out.print("Matematik Notunuz: ");
+	matematik=scanner.nextInt();
+	if (matematik>=0&&matematik<=100) {
+		nottoplam+=matematik;
+		++sayac;
+	}
+	System.out.print("Fizik Notunuz: ");
+	fizik=scanner.nextInt();
+	if (fizik>=0&&fizik<=100) {
+		nottoplam+=fizik;
+	++sayac;
+	}
+	System.out.print("Kimya Notunuz: ");
+	kimya=scanner.nextInt();
+	 if (kimya>=0&&kimya<=100) {
+			nottoplam+=matematik;
+	++sayac;	
+	 }
+	System.out.print("Türkçe Notunuz: ");
+	türkce=scanner.nextInt();
+	if (türkce>=0&&türkce<=100) {
+		nottoplam+=türkce;
+		++sayac;
+	}
+	System.out.print("Müzik Notunuz: ");
+	müzik=scanner.nextInt();
+	 if (müzik>0&&müzik<=100) {
+		nottoplam+=müzik;
+		++sayac;
+	}
+	 ortalama=nottoplam/sayac;
+	 if (ortalama>=55) {
+		System.out.println("Sınıfı geçtiniz.");
+	}
+	 else {
+		System.out.println("Bir üst sınıfa geçemediniz");
+	}
+	}
+}
