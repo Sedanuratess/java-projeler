@@ -1,0 +1,30 @@
+package projelerpatika;
+import java.util.Scanner;
+
+public class EbobEkokHesaplama {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Birinci sayıyı girin: ");
+        int sayi1 = input.nextInt();
+
+        System.out.print("İkinci sayıyı girin: ");
+        int sayi2 = input.nextInt();
+
+        int ebob = 0;
+        int ekok = 0;
+        int bolen = 1;
+
+        while (bolen <= sayi1 && bolen <= sayi2) {
+            if (sayi1 % bolen == 0 && sayi2 % bolen == 0) {
+                ebob = bolen;
+            }
+            bolen++;
+        }
+
+        ekok = (sayi1 * sayi2) / ebob;
+
+        System.out.println("EBOB: " + ebob);
+        System.out.println("EKOK: " + ekok);
+    }
+}
