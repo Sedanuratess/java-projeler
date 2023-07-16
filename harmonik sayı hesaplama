@@ -1,0 +1,20 @@
+package projelerpatika;
+import java.util.Scanner;
+
+public class BasamakToplama {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int sayi = input.nextInt();
+        double harmonik = 0.0;
+
+        for (int i = 1; i <= sayi; i++) {
+            harmonik += 1.0 / i;
+        }
+
+        System.out.println("Harmonik değer: " + harmonik);
+   
+
+    }
+}
+
