@@ -1,0 +1,19 @@
+package projelerpatika;
+import java.util.Scanner;
+//Java döngüleri ile girilen sayıya kadar olan 4 ve 5'in kuvvetlerini ekrana yazdıran programı yazıyoruz.
+public class üshesaplama {
+    public static void main(String[] args) {
+    
+      Scanner scanner=new Scanner(System.in);
+    System.out.print("Bir sayı giriniz: ");  
+    int sayi=scanner.nextInt();
+    for(int i=0;i<=sayi;i++) {
+    	if (i%4==0) {
+			System.out.println(i+"'nin kuvveti=>"+i*i);
+		}
+    	 if (i%5==0) {
+			System.out.println(i+"'nin kuvveti=>"+i*i);
+		}
+    	
+    }
+   }}
