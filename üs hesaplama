@@ -1,0 +1,20 @@
+package projelerpatika;
+import java.util.Scanner;
+
+import javax.security.auth.kerberos.KerberosCredMessage;
+/*Java ile kullanıcının girdiği değerler ile üslü sayı hesaplayan programı "For Döngüsü" kullanarak yapınız.*/
+public class ushesaplama {
+    public static void main(String[] args) {
+    	int sonuc=1;
+    	int i;
+    Scanner scanner=new Scanner(System.in);
+    System.out.print("Bir sayı giriniz:  ");
+    int sayi=scanner.nextInt();
+   System.out.print("Kaçıncı üssünü hesaplamak istiyorsunuz? ");
+   int us=scanner.nextInt();
+    for(i=us;i>0;i--) {
+    	sonuc=sonuc*sayi;
+    }
+    System.out.println(sayi+" sayısının "+us+".üssünün değeri =>"+sonuc);
+    
+    }}
