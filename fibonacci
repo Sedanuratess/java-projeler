@@ -1,0 +1,26 @@
+package projelerpatika;
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Fibonacci serisinin eleman sayısını girin: ");
+        int elemanSayisi = scanner.nextInt();
+
+        int ilkEleman = 0;
+        int ikinciEleman = 1;
+
+        System.out.print("Fibonacci Serisi: " + ilkEleman + ", " + ikinciEleman);
+
+        for (int i = 2; i < elemanSayisi; i++) {
+            int sonrakiEleman = ilkEleman + ikinciEleman;
+            System.out.print(", " + sonrakiEleman);
+
+            ilkEleman = ikinciEleman;
+            ikinciEleman = sonrakiEleman;
+        }
+
+        System.out.println();
+    }
+}
+
