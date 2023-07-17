@@ -1,0 +1,19 @@
+package projelerpatika;
+//Java dilinde, taban ve üs değerleri kullanıcıdan alınan üs alma işlemini "Recursive" metot kullanarak yapan programı yazınız.
+import java.util.Scanner;
+
+public class hesap_makinesi {
+	public static double  üs_yapma(int üs,int taban) {
+		double sonuc=Math.pow(üs, taban);	
+		return sonuc;
+	}
+    public static void main(String[] args) {
+    	Scanner scanner=new Scanner(System.in);
+    	System.out.print("tabanı giriniz: ");
+    	int üs=scanner.nextInt();
+    	System.out.print("üs'ü giriniz: ");
+    	int taban=scanner.nextInt();
+    	
+    	System.out.println("Sonuç: "+üs_yapma(üs, taban));
+    }
+}
