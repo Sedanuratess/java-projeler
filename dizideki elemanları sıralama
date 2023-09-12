@@ -1,0 +1,23 @@
+//Java dilinde, dizideki elemanları küçükten büyüğe sıralayan programı yazınız.
+//Dizinin boyutunu ve dizinin elemanlarını kullanıcıdan alınız.
+public class Main {
+	
+    public static void main(String[] args) {
+    	
+   Scanner klavyeScanner=new Scanner(System.in);
+   System.out.print("Dizinin boyutunu giriniz:");
+   int index=klavyeScanner.nextInt();
+   System.out.println("Dizinin boyutu n: "+index);
+   System.out.println("Dizinin elemanlarını giriniz:");
+   int valuelist[]=new int[index];
+   for(int i=0;i<index;i++) {
+	  valuelist[i]= klavyeScanner.nextInt(); 
+   }
+     
+   Arrays.sort(valuelist);
+   System.out.print("Sıralama: ");
+  for(int eleman:valuelist) {
+	  System.out.print(eleman + " ");
+	  
+  }
+    }}
