@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+    String yenikelime="";
+    	Scanner scanner=new Scanner(System.in);
+    	System.out.print("Bir kelime giriniz: ");
+    	String kelime=scanner.nextLine();
+    	for(int i=kelime.length()-1;i>=0;i--) {
+    		yenikelime+=kelime.charAt(i);
+    		
+    	}
+    	if (kelime.equals(yenikelime)) {                      //String karşılaştırması için equals kullanırız.
+			System.out.println("Palindromik kelimedir.");
+			
+		}else {
+			System.out.println("Palindromik kelime değildir.");
+		}
+    	
